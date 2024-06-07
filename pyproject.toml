@@ -1,0 +1,17 @@
+[tool.mypy]
+exclude = ["parser/parser/settings.py", "parser/api/migrations"]
+disable_error_code = [
+    "union-attr",
+    "attr-defined",
+    "import-untyped",
+    "no-redef",
+    "misc",
+]
+
+[tool.flake8]
+max-line-length = 88
+ignore = [
+    "F811",
+    "W503",
+]
+exclude = ["parser/parser/settings.py"]
